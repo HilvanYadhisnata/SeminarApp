@@ -110,7 +110,7 @@ Download dari [Google Fonts - Poppins](https://fonts.google.com/specimen/Poppins
 
 ## 🎬 Video Penjelasan
 
-> Link Google Drive / YouTube: `https://...`
+> Link Google Drive / YouTube: `[https://...](https://youtu.be/A9JXkM7298Y?si=mkGxs6VffiHMEEP6)`
 
 Video mencakup:
 1. Penjelasan Halaman Login
