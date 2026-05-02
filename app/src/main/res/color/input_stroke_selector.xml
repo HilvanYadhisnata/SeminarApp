@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    File: input_stroke_selector.xml (Color State List)
+    Deskripsi: Warna border TextInputLayout berdasarkan state
+-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Focused: warna primary -->
+    <item android:color="@color/primary" android:state_focused="true" />
+    <!-- Error: warna merah -->
+    <item android:color="@color/error" android:state_activated="true" />
+    <!-- Default: abu-abu terang -->
+    <item android:color="#C5CAE9" />
+</selector>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layout: fragment_seminar_list.xml
+    Deskripsi: Tab Seminar - menampilkan daftar seminar yang tersedia dengan card
+-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Header Daftar Seminar -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Seminar Tersedia"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih dan daftarkan diri Anda sekarang"
+            android:textSize="13sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/text_hint"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Seminar Card 1 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="🤖" android:textSize="22sp" android:gravity="center" android:background="@color/primary_very_light" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AI &amp; Machine Learning" android:textSize="15sp" android:fontFamily="sans-serif" android:textColor="@color/text_primary" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📅 15 Juni 2025  •  🌐 Online" android:textSize="12sp" android:fontFamily="sans-serif" android:textColor="@color/text_hint" android:layout_marginTop="2dp" />
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GRATIS" android:textSize="10sp" android:textColor="@color/white" android:fontFamily="sans-serif" android:background="@color/success" android:paddingHorizontal="8dp" android:paddingVertical="4dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pelajari fondasi AI/ML dari pakar industri, mulai dari supervised learning hingga neural networks." android:textSize="12sp" android:fontFamily="sans-serif" android:textColor="@color/text_body" android:layout_marginTop="12dp" android:lineSpacingMultiplier="1.5" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Seminar Card 2 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="🔐" android:textSize="22sp" android:gravity="center" android:background="@color/primary_very_light" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cybersecurity &amp; Ethical Hacking" android:textSize="15sp" android:fontFamily="sans-serif" android:textColor="@color/text_primary" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📅 22 Juni 2025  •  📍 Bandung" android:textSize="12sp" android:fontFamily="sans-serif" android:textColor="@color/text_hint" android:layout_marginTop="2dp" />
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="BARU" android:textSize="10sp" android:textColor="@color/white" android:fontFamily="sans-serif" android:background="@color/secondary_dark" android:paddingHorizontal="8dp" android:paddingVertical="4dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Workshop intensif penetration testing, keamanan jaringan, dan strategi pertahanan siber modern." android:textSize="12sp" android:fontFamily="sans-serif" android:textColor="@color/text_body" android:layout_marginTop="12dp" android:lineSpacingMultiplier="1.5" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Seminar Card 3 -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginBottom="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                    <TextView android:layout_width="40dp" android:layout_height="40dp" android:text="📱" android:textSize="22sp" android:gravity="center" android:background="@color/primary_very_light" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mobile Dev with Kotlin" android:textSize="15sp" android:fontFamily="sans-serif" android:textColor="@color/text_primary" />
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📅 29 Juni 2025  •  🌐 Online" android:textSize="12sp" android:fontFamily="sans-serif" android:textColor="@color/text_hint" android:layout_marginTop="2dp" />
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HOT" android:textSize="10sp" android:textColor="@color/white" android:fontFamily="sans-serif" android:background="@color/error" android:paddingHorizontal="8dp" android:paddingVertical="4dp" />
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Bangun aplikasi Android profesional menggunakan Kotlin, Jetpack, dan Material Design 3." android:textSize="12sp" android:fontFamily="sans-serif" android:textColor="@color/text_body" android:layout_marginTop="12dp" android:lineSpacingMultiplier="1.5" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- CTA Daftar -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_daftar_from_list"
+            style="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Daftar Seminar Sekarang"
+            android:textColor="@color/white"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>

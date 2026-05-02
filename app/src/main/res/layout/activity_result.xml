@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Layout: activity_result.xml
+    Deskripsi: Halaman Hasil Pendaftaran Seminar
+    Menampilkan: pesan sukses + summary data + tombol kembali ke Home
+-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_main"
+    android:fillViewport="true"
+    tools:context=".ResultActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- HEADER SUKSES -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_header_gradient"
+            android:orientation="vertical"
+            android:paddingTop="64dp"
+            android:paddingBottom="52dp"
+            android:paddingHorizontal="24dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_success_icon"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_check_circle"
+                android:background="@drawable/bg_icon_circle"
+                android:padding="14dp"
+                android:contentDescription="Berhasil"
+                app:tint="@color/secondary"
+                android:layout_marginBottom="20dp" />
+
+            <TextView
+                android:id="@+id/tv_berhasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pendaftaran Berhasil!"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                android:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/tv_sub_berhasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Anda telah berhasil disimpan.\nSampai jumpa di seminar!"
+                android:textColor="#DDEEFF"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.5" />
+        </LinearLayout>
+
+        <!-- CARD SUMMARY DATA -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="24dp"
+            app:cardElevation="10dp"
+            app:cardBackgroundColor="@color/white"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="-28dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+                <!-- Judul -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+                    <View android:layout_width="4dp" android:layout_height="24dp"
+                        android:background="@color/primary" android:layout_marginEnd="10dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ringkasan Pendaftaran"
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textColor="@color/primary" />
+                </LinearLayout>
+
+                <!-- Row Nama -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:background="@drawable/bg_card_success" android:padding="12dp" android:layout_marginBottom="8dp">
+                    <TextView android:layout_width="24dp" android:layout_height="24dp" android:text="👤" android:textSize="16sp" android:gravity="center" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nama Lengkap" android:textSize="11sp" android:fontFamily="sans-serif" android:textColor="@color/text_hint" />
+                        <TextView android:id="@+id/tv_result_nama" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textSize="14sp" android:fontFamily="sans-serif-medium" android:textColor="@color/text_primary" tools:text="Hilvan Yadhisnata" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Row Email -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:background="@drawable/bg_card_success" android:padding="12dp" android:layout_marginBottom="8dp">
+                    <TextView android:layout_width="24dp" android:layout_height="24dp" android:text="📧" android:textSize="16sp" android:gravity="center" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email" android:textSize="11sp" android:fontFamily="sans-serif" android:textColor="@color/text_hint" />
+                        <TextView android:id="@+id/tv_result_email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textSize="14sp" android:fontFamily="sans-serif-medium" android:textColor="@color/text_primary" tools:text="hilvan@email.com" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Row Nomor HP -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:background="@drawable/bg_card_success" android:padding="12dp" android:layout_marginBottom="8dp">
+                    <TextView android:layout_width="24dp" android:layout_height="24dp" android:text="📱" android:textSize="16sp" android:gravity="center" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nomor HP" android:textSize="11sp" android:fontFamily="sans-serif" android:textColor="@color/text_hint" />
+                        <TextView android:id="@+id/tv_result_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textSize="14sp" android:fontFamily="sans-serif-medium" android:textColor="@color/text_primary" tools:text="081234567890" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Row Jenis Kelamin -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:background="@drawable/bg_card_success" android:padding="12dp" android:layout_marginBottom="8dp">
+                    <TextView android:layout_width="24dp" android:layout_height="24dp" android:text="🚻" android:textSize="16sp" android:gravity="center" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Jenis Kelamin" android:textSize="11sp" android:fontFamily="sans-serif" android:textColor="@color/text_hint" />
+                        <TextView android:id="@+id/tv_result_gender" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textSize="14sp" android:fontFamily="sans-serif-medium" android:textColor="@color/text_primary" tools:text="Laki-laki" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Row Seminar (highlight warna biru) -->
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:background="@color/primary_very_light" android:padding="12dp">
+                    <TextView android:layout_width="24dp" android:layout_height="24dp" android:text="🎓" android:textSize="16sp" android:gravity="center" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:layout_marginStart="12dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Seminar yang Dipilih" android:textSize="11sp" android:fontFamily="sans-serif" android:textColor="@color/text_hint" />
+                        <TextView android:id="@+id/tv_result_seminar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="-" android:textSize="14sp" android:fontFamily="sans-serif" android:textColor="@color/primary" tools:text="AI &amp; Machine Learning" />
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="✓" android:textSize="14sp" android:textColor="@color/white"
+                        android:fontFamily="sans-serif" android:background="@color/success"
+                        android:paddingHorizontal="10dp" android:paddingVertical="6dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- TOMBOL KEMBALI -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_home"
+            style="@style/PrimaryButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="Kembali ke Halaman Utama"
+            android:textColor="@color/white"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- TOMBOL DAFTAR LAGI -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_daftar_lagi"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="Daftar Seminar Lain"
+            android:textSize="14sp"
+            android:textColor="@color/primary"
+            android:fontFamily="sans-serif-medium"
+            app:backgroundTint="@color/primary_very_light"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="1dp"
+            app:cornerRadius="16dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="40dp" />
+
+    </LinearLayout>
+</ScrollView>

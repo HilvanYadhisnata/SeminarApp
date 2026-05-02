@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    tools:context=".HomeActivity">
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- HEADER GRADIENT SECTION                                          -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header_gradient"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="48dp"
+        android:paddingBottom="20dp"
+        android:paddingHorizontal="24dp">
+
+        <!-- Ikon Logo -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_app_logo"
+            android:background="@drawable/bg_icon_circle"
+            android:padding="10dp"
+            app:tint="@color/white" />
+
+        <!-- Teks Greeting -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:id="@+id/tv_greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Halo, User!"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif" />
+
+            <TextView
+                android:id="@+id/tv_sub_greet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seminar Registration App"
+                android:textColor="#B3FFFFFF"
+                android:textSize="13sp"
+                android:fontFamily="sans-serif" />
+        </LinearLayout>
+
+        <!-- Ikon dekoratif -->
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_event"
+            android:background="@drawable/bg_icon_circle"
+            android:padding="8dp"
+            app:tint="@color/white" />
+
+    </LinearLayout>
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- VIEW PAGER 2 (Konten Tab)                                        -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <!-- BOTTOM NAVIGATION BAR                                            -->
+    <!-- ══════════════════════════════════════════════════════════════════ -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_nav_gradient"
+        android:elevation="12dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextColor="#80FFFFFF"
+        app:tabIndicatorColor="@color/white"
+        app:tabIndicatorHeight="3dp"
+        app:tabIndicatorGravity="top"
+        app:tabIconTint="@color/white"
+        app:tabTextAppearance="@style/TabTextStyle"
+        app:tabPaddingTop="8dp"
+        app:tabPaddingBottom="8dp" />
+
+</LinearLayout>

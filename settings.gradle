@@ -1,0 +1,23 @@
+// ============================================================
+// File: settings.gradle
+// Deskripsi: Konfigurasi modul dan repository project
+// ============================================================
+
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "SeminarApp"
+include ':app'

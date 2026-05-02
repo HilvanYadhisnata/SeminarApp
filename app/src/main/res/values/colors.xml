@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ── Primary Color (Dark Blue) ─────────────────────────────────────── -->
+    <color name="primary">#1565C0</color>
+    <color name="primary_dark">#0D47A1</color>
+    <color name="primary_light">#64B5F6</color>
+    <color name="primary_very_light">#E3F2FD</color>
+
+    <!-- ── Secondary Color (Light Blue) ──────────────────────────────────── -->
+    <color name="secondary">#42A5F5</color>
+    <color name="secondary_dark">#1E88E5</color>
+    <color name="secondary_light">#BBDEFB</color>
+
+    <!-- ── Success Color (Emerald) ────────────────────────────────────────── -->
+    <color name="success">#10B981</color>
+    <color name="success_dark">#059669</color>
+    <color name="success_light">#A7F3D0</color>
+
+    <!-- ── Error Color ──────────────────────────────────────────────────────── -->
+    <color name="error">#E53935</color>
+    <color name="error_light">#FFCDD2</color>
+
+    <!-- ── Background Colors ────────────────────────────────────────────────── -->
+    <color name="bg_main">#E3F2FD</color>
+    <color name="white">#FFFFFF</color>
+    <color name="spinner_bg">#E3F2FD</color>
+
+    <!-- ── Text Colors ──────────────────────────────────────────────────────── -->
+    <color name="text_primary">#0D1B3E</color>
+    <color name="text_body">#2D3748</color>
+    <color name="text_hint">#9098B1</color>
+    <color name="text_disabled">#C4C9D4</color>
+
+    <!-- ── UI Element Colors ────────────────────────────────────────────────── -->
+    <color name="divider">#BBDEFB</color>
+    <color name="card_shadow">#1A1565C0</color>
+
+    <!-- ── Bottom Nav Colors ──────────────────────────────────────────────── -->
+    <color name="nav_bg_start">#0D47A1</color>
+    <color name="nav_bg_end">#42A5F5</color>
+
+    <!-- ── Material Theme Required ─────────────────────────────────────────── -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- bg_card_success.xml - Border kiri berwarna untuk item summary -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/primary_very_light" />
+    <corners android:radius="8dp" />
+</shape>
