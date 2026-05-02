@@ -110,7 +110,6 @@ Download dari [Google Fonts - Poppins](https://fonts.google.com/specimen/Poppins
 
 ## 🎬 Video Penjelasan
 
-> **[TAMBAHKAN LINK VIDEO DI SINI]**  
 > Link Google Drive / YouTube: `https://...`
 
 Video mencakup:
